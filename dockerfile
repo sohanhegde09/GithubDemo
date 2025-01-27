@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk --no-chache bash
+RUN apk add --no-chache bash
 
 WORKDIR /app
 

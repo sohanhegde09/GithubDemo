@@ -16,4 +16,5 @@ jobs:
       run: |
          docker build .  -t sohanhegde09/hello-docker-hub:latest
     - name: publish
+      run: |
          docker push sohanhegde09/hello-docker-hub:latest

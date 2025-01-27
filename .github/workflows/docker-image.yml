@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: |
-         docker build .  -t sohanhegde09/hello-docker-hub:latest
-    - name: publish
-      run: |
-         docker push sohanhegde09/hello-docker-hub:latest
+      - name: checkout
+      - uses: actions/checkout@v4
+      - name: Build the Docker image
+        run: |
+          docker build .  -t sohanhegde09/hello-docker-hub:latest
+      - name: publish
+        run: |
+          docker push sohanhegde09/hello-docker-hub:latest
